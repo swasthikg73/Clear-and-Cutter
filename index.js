@@ -2,8 +2,7 @@ import fs from "fs/promises";
 import fsn from "fs";
 import path from "path";
 
-let basepath =
-  "E:\\Swasthik\\Sigma Web development\\Backend\\Excercise for sorting of files";
+let basepath = ""; //base path
 let files = await fs.readdir(basepath);
 console.log(path);
 
@@ -33,7 +32,3 @@ for (const file of files) {
     }
   }
 }
-
-// let a = ["js", "html", "css"];
-// console.log(a.pop());
-// console.log(!a.includes("js"));
